@@ -1,0 +1,31 @@
+services:
+  # Serviço do banco de dados PostgreSQL
+  db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: fadesp_user
+      POSTGRES_PASSWORD: fadesp_password
+      POSTGRES_DB: fadesp_challenge
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432" # Mapeia a porta do container para a porta 5433 da sua máquina local
+
+  # Serviço da nossa aplicação Python
+  app:
+    container_name: python_app
+    build: . # Constrói a imagem a partir do Dockerfile no diretório atual
+    depends_on:
+      - db # Garante que o serviço 'db' inicie antes do serviço 'app'
+    volumes:
+      - .:/app # Mapeia o diretório atual do projeto para o diretório /app no contêiner
+    environment:
+      # Passa as mesmas variáveis de ambiente para a aplicação poder se conectar ao DB
+      POSTGRES_USER: fadesp_user
+      POSTGRES_PASSWORD: fadesp_password
+      POSTGRES_DB: fadesp_challenge
+
+volumes:
+  # Define um volume nomeado para persistir os dados do banco de dados
+  postgres_data:

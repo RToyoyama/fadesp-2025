@@ -1,0 +1,8 @@
+pandas
+unidecode
+scikit-learn
+matplotlib
+seaborn
+# Para conectar com o PostgreSQL
+sqlalchemy
+psycopg2-binary

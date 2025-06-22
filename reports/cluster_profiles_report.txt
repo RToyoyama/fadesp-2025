@@ -1,0 +1,12 @@
+--- Perfil Médio dos Clusters de Instituições ---
+
+         QT_DOC_EX_DOUT  QT_DOC_EX_MEST  total_bolsas_cnpq
+cluster                                                   
+1           2554.000000      250.650000        1922.150000
+2            518.636364      299.709091         149.909091
+0             23.608898       28.884322           1.695339
+
+--- Interpretação ---
+Cluster 0: Polos de Pesquisa (alto volume de doutores e bolsas).
+Cluster 1: IES em Desenvolvimento (volume intermediário).
+Cluster 2: Foco no Ensino (baixo volume de doutores e bolsas).
