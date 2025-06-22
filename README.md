@@ -11,11 +11,11 @@ Os dados utilizados neste projeto são públicos e, devido ao seu tamanho, não 
 Para executar os notebooks, você precisa baixar os dois arquivos e colocá-los na pasta `data/raw/`.
 
 1.  **Censo da Educação Superior (INEP):**
-    * **Link para Download:** `https://drive.google.com/file/d/1AXQzSBJKOQeiq-XVeLtimB1r6_1p9zIm/view?usp=drive_link`
+    * **Link para Download:** `https://drive.google.com/file/d/1Mi7edD7kQV89FXKR0deXmndfyT-OWAGS/view?usp=sharing`
     * **Arquivo Esperado:** `MICRODADOS_ED_SUP_IES_2023.CSV`
 
 2.  **Bolsas de Pesquisa do CNPq:**
-    * **Link para Download:** `https://drive.google.com/file/d/10SwsXVsfnvsTzB-hrMEHxBG_pR225nZK/view?usp=drive_link`
+    * **Link para Download:** `https://drive.google.com/file/d/1w15Nki88dqH0uGCGLJGcZIvxFfBcYYC1/view?usp=sharing`
     * **Arquivo Esperado:** `Relatorio_de_dados_abertos_CNPq.csv`
 
 ## 3. Metodologia e Etapas do Projeto
